@@ -1,0 +1,185 @@
+
+
+@font-face {
+    src: url(../fonts/Mothanna.ttf);
+    font-family: ar-font;
+}
+
+
+body {
+    direction: rtl;
+    font-family: ar-font;
+    font-size: 20px;
+    font-weight: 600;
+    overflow-x: hidden;
+    text-align: right;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+nav.navbar ul li {
+    margin-left: 20px;
+    transition: all .3s ease;
+}
+
+nav.navbar ul li:hover {
+    background-color: rgba(255, 166, 0, 0.5);
+    border-radius: 10px;
+}
+
+nav.navbar ul li a {
+    color: black;
+    transition: all .2s ease;
+}
+
+nav.navbar ul li a:hover {
+    color: rgb(65, 65, 65);
+}
+
+#home {
+    background-image: url(../images/Alternating-Arrowhead.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home ul.icons-social-media {
+    margin-top: 35px;
+}
+
+#home ul.icons-social-media li {
+    margin-top: 20px;
+    margin-right: -10px;
+    border: 1px solid orange;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#home ul.icons-social-media li:hover,
+#home ul.icons-social-media li:focus,
+#home ul.icons-social-media li:active {
+    background-color: orange;
+}
+
+#home ul.icons-social-media li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#home ul.icons-social-media li a:hover,
+#home ul.icons-social-media li a:focus,
+#home ul.icons-social-media li a:active {
+    color: black;
+}
+
+h3.custom-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+p.paragraph-1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+}
+
+.image-developer img {
+    height: 275px;
+    margin-top: 15px;
+    margin-right: 27%;
+}
+
+#why-me {
+    background-image: url(../images/Sun-Tornado.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 35px 0;
+}
+
+#why-me .title_why_me {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#why-me .paragraph-2 {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#why-me .vision-target {
+    padding: 30px 15px;
+    margin-right: 5.5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background: orange;
+    box-shadow: inset 20px 20px 60px orange, 
+                inset -20px -20px 60px orange;
+}
+
+#why-me h3.title-Vision {
+    color: white;
+    border-bottom: 3px solid rgba(255, 68, 0, 0.8);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#why-me p.paragraph-3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+      
+}
+
+#services {
+    background-image: url(../images/Subtle-Prism.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 0;
+}
+
+#services .title-services {
+    font-size: 26px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#services .paragraph-4 p {
+    font-size: 18px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+
+.service-item {
+        padding: 30px 15px;
+        margin-right: 5.5%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        background: orange;
+        box-shadow: inset 20px 20px 60px orange, inset -20px -20px 60px orange;
+}
+
+.service-icon {
+  text-align: center;
+  margin-bottom: 22px;
+}
