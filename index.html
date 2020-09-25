@@ -6,14 +6,14 @@
     <title>المطور العربي</title>
     <link rel="stylesheet" href="assest/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="assest/bootstrap-4.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assest/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assest/owl-carousel/css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="conatiner-fluid">
+
         <!--قائمة التنقل-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="navBar">
             <a href="" class="navbar-brand">
                 <img src="images/logo.png" alt="شعار الموقع">
             </a>
@@ -25,31 +25,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportContent">
                 <ul class="navbar-nav mr-auto ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">
+                        <a class="nav-link scroll" href="#home">
                             <img src="images/icons/home-icon.png" alt="الرئيسية">
                             الرئيسية
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#why-me">
+                        <a class="nav-link scroll" href="#why-me">
                             <img src="images/icons/why-me.png" alt="من نحن">
                             من نحن
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">
+                        <a class="nav-link scroll" href="#services">
                             <img src="images/icons/services-me.png" style="width: 25px; height: 25px;" alt="خدمات">
                             خدمات
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clients">
+                        <a class="nav-link scroll" href="#clients">
                             <img src="images/icons/clients-me.png" style="width: 25px; height: 25px;" alt="عملاؤنـا">
                             عملاؤنـا
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-us">
+                        <a class="nav-link scroll" href="#our-projects">
+                            <img src="images/icons/chip.png" style="width: 25px; height: 25px;" alt="مشاريعنا">
+                            مشاريعنا
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#contact-us">
                             <img src="images/icons/contact-us.png" style="width: 27px; height: 27px;" alt="تواصل معنا">
                             تواصل معنا
                         </a>
@@ -59,11 +65,13 @@
         </nav>
         <!--نهاية قائمة التنقل -->
 
+        <!--قسم الرئيسية-->
         <section class="section-home" id="home">
             <!--روابط التواصل الاجتماعي-->
             <div class="row">
-                <div class="col-1">
-                    <ul class="list-unstyled icons-social-media">
+                <!--
+                    <div class="d-none d-lg-block">
+                    <ul class="list-unstyled icons-social-media"  data-aos="fade-left" data-aos-duration="800">
                         <li>
                             <a href="#" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
@@ -86,7 +94,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4">
+                -->
+                <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-duration="800">
                     <h3 class="custom-heading">المبرمج العربي</h3>
                     <p class="paragraph-1">
                          المبرمج العربي، هو شخص عربي قائم على تصميم مواقع الويب بأحدثِ التقنيات والإصدرات الأخيرة للغات البرمجة وعلى رأسها :
@@ -96,7 +105,7 @@
                          التصميم للمواقع يكون متوافق مع كافة الشاشات والأجهزة اللوحية وحتى النقالة .
                     </p>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-md-12" data-aos="fade-up" data-aos-duration="800">
                     <div class="image-developer">
                         <img src="images/image-developer.png" alt="">
                     </div>
@@ -104,152 +113,490 @@
             </div>
         </section>
 
+        <!--قسم من نحن-->
         <section class="section-why-me" id="why-me">
-            <h3 class="title_why_me">من نحن ؟</h3>
+            <h3 class="title_why_me text-center">من نحن ؟</h3>
             <div class="row">
-                <div class="col-6">
-                    <p class="paragraph-2">
-                        هي شركة رائدة في توزيع المنتجات الطازجة لجميع
-                         أنواع الفواكه والخضروات الطازجة عالية الجودة .. عملاؤنا في قسم التوريد
-                         هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق 
-                        والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
+                <div class="col-12" data-aos="flip-down" data-aos-duration="800">
+                    <p class="paragraph-2 text-center">
+                        يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية :
+                        <br> 
+                        HTML5, CSS3, JAVASCRIPT, BOOTSTRAP 4.5 last version 
+                        <br>
+                        كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                        تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.                        
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-5 vision-target">
+                    <div class="col-lg-5 col-sm-10 vision-target" data-aos="flip-down" data-aos-duration="800">
                         <!--الرؤية-->
                         <h3 class="title-Vision">الرؤية</h3>
                         <p class="paragraph-3">
-                            هي شركة رائدة في توزيع المنتجات الطازجة لجميع أنواع 
-                            الفواكه والخضروات الطازجة عالية الجودة .. عملاؤنا في قسم التوريد
-                             هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق 
-                            والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
                         </p>
                         <p class="paragraph-3">
-                            هي شركة رائدة في توزيع المنتجات الطازجة لجميع أنواع 
-                            الفواكه والخضروات الطازجة عالية الجودة .. عملاؤنا في قسم التوريد
-                             هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق 
-                            والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
+                            <br>
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
                         </p>
                     </div>
-                    <div class="col-5 vision-target">
+                    <div class="col-lg-5 col-sm-10 vision-target" data-aos="flip-down" data-aos-duration="800">
                            <!--الهدف-->
                            <h3 class="title-Vision">الـهـدف</h3>
                            <p class="paragraph-3">
-                               هي شركة رائدة في توزيع المنتجات الطازجة لجميع أنواع 
-                               الفواكه والخضروات الطازجة عالية الجودة .. عملاؤنا في قسم التوريد
-                                هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق 
-                               والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
-                           </p>
-                           <p class="paragraph-3">
-                            هي شركة رائدة في توزيع المنتجات الطازجة لجميع أنواع 
-                            الفواكه والخضروات الطازجة عالية الجودة .. عملاؤنا في قسم التوريد
-                             هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق 
-                            والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
+                        </p>
+                        <p class="paragraph-3">
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
+                            <br>
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية : HTML5 و CSS3 .
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!--قسم خدمات-->
         <section class="section_services" id="services">
-            <h3 class="title-services">خدماتنا</h3>
+            <h3 class="title-services text-center" data-aos="flip-down" data-aos-duration="750">خدماتنا</h3>
             <div class="row">
-                <div class="col-6">
-                    <div class="paragraph-4">
+                <div class="col-12" data-aos="flip-down" data-aos-duration="800">
+                    <div class="paragraph-4 text-center">
                         <p>
-                            هي شركة رائدة في توزيع المنتجات الطازجة 
-                            لجميع أنواع الفواكه والخضروات الطازجة عالية الجودة .. 
-                            عملاؤنا في قسم التوريد هم تجار الجملة ومحلات السوبر 
-                            ماركت والهايبر ماركت والفنادق والمطاعم في جميع 
-                            أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي.
+                            يمكنني تصميم مواقع الويب الاحترافية بأحدث التقنيات المتبعة باللغات الآتية :
+                            <br> 
+                            HTML5, CSS3, JAVASCRIPT, BOOTSTRAP 4.5 last version 
+                            <br>
+                            كتابة الأكواد البرمجة سطر بسطر بشكل يدوي 100٪ .
+                            تصميم متجاوب مع مختلف الشاشات والأجهزة النقالة.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <div class="service-item">
+                <div class="col-lg-4 col-md-12">
+                    <div class="service-item" data-aos="zoom-in" data-aos-duration="800">
                         <div class="service-icon">
                             <img src="images/icons-1/coding.png" alt="">
                         </div>
                         <div class="service-text">
-                            <h4 class="serv_title text-center">مولد النص العربي</h4>
-                            <p>عملاؤنا في قسم التوريد هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي. </p>
+                            <h4 class="serv_title text-center">تصميم المواقع</h4>
+                            <p>
+                                نعمل على تصميم موقع مميز لمشروعك بأفضل التقينات المتبعة :
+                                <br>
+                                <q>
+                                    HTML5, CSS3, Javascript, Bootstrap4.5, Jquery 
+                                </q>
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="service-item">
+                <div class="col-lg-4 col-md-12">
+                    <div class="service-item" data-aos="zoom-in" data-aos-duration="800">
                         <div class="service-icon">
                             <img src="images/icons-1/responsive.png" alt="">
                         </div>
                         <div class="service-text">
-                            <h4 class="serv_title text-center">مولد النص العربي</h4>
-                            <p>عملاؤنا في قسم التوريد هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي. </p>
+                            <h4 class="serv_title text-center">التوافق مع الشاشات</h4>
+                            <p>
+                                لا نكتفي بالتصميم فحسب، بل نجعل تصميم الموقع متوافق مع جميع الشاشات : 
+                                <br>
+                                <q>
+                                    الشاشات الكبيرة، الحواسيب، الأجهزة اللوحية، الأجهزة المتوسطة والشاشات ذات الحجم الصغير جداً
+                                </q>
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="service-item">
+                <div class="col-lg-4 col-md-12">
+                    <div class="service-item" data-aos="zoom-in" data-aos-duration="800">
                         <div class="service-icon">
                             <img src="images/icons-1/web-development.png" alt="">
                         </div>
                         <div class="service-text">
-                            <h4 class="serv_title text-center">مولد النص العربي</h4>
-                            <p>عملاؤنا في قسم التوريد هم تجار الجملة ومحلات السوبر ماركت والهايبر ماركت والفنادق والمطاعم في جميع أنحاء الشرق الأوسط ودول مجلس التعاون الخليجي. </p>
+                            <h4 class="serv_title text-center">توثيق النص البرمجي</h4>
+                            <p>
+                                <q>
+                                    أيضاً نعمل على توثيق النص البرمجي للتصميم من خلال كتابة تعليقات عليه
+                                    وهذا حتى يتسنّ للعميل تعديل النص البرمجي بنفسهِ إذا أراد ذلك 
+                                    في مراحل مستقبلية 
+                                </q>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--قسم عملاؤنـا-->
+        <section class="section_clients" id="clients">
+            <div class="title-clients">
+                <h4 class="custom-heading-clients text-center" data-aos="zoom-in" data-aos-duration="800">عملاؤنـا</h4>
+                <div class="row">
+                    <div class="col-12" data-aos="zoom-out" data-aos-duration="800">
+                        <p class="custom_paragh text-center">
+                            نعمل على إرضاء عملاؤنـا، ولأجل تحقيق هذه الغاية نقدم لهم الأفضل  
+                            <br>
+                            ولا شيء غير الجودة مع الإلتزام بأمانة  المشاريع أي أننا لا ننشر 
+                            <br>
+                            مشروعك على الإنترنت بل يبقى سرياً مع كامل الحقوق لصاحب المشروع .
+                        </p>
+                    </div>
+                </div>
+
+                <div id="carouselSectionClients" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSectionClients" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSectionClients" data-slide-to="1"></li>
+                        <li data-target="#carouselSectionClients" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-aos="zoom-in" data-aos-duration="800">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">أحمد مرتجي</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    عمل ممتاز، تتميزون بالإبداع والأمانة 
+                                                    <br>
+                                                    بارك الله فيكم يا أبطال
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">محمد أمين</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    عمل رائع ومميز 
+                                                    <br>
+                                                    بارك الله فيكم 
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">عبد الغفور</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    تتميزون بالإبداع والأمانة  
+                                                    <br>
+                                                    شكراً لكم كثيراً ....
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-aos="zoom-in" data-aos-duration="800">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">محمد علي</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    تصاميم مميزة وفريق عمل في قمة الإبداع ...
+                                                    شكر الله لكم
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">علي بدران</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    مصممين مبدعين خارج الصندوق 
+                                                    <br>
+                                                    بارك الله فيكم 
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center">علي وحيد</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    تصميم في قمة الإبداع وتسليم  سريع
+                                                    عملكم رائع
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-aos="zoom-in" data-aos-duration="800">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center"> بدر الدين حسن</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    قمة في الإبداع وأمانة في التنفيذ 
+                                                    <br>
+                                                    شكراً لكم ...
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center"> أمين الزيرو</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    أعجبني عملكم كثيراً ... سأكرر التعامل معكم مرة أخرى 
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="card custom-card">
+                                        <img src="images/bussiness-man.png" class="rounded-circle" style="width: 100px; height: 100px;" alt="">
+                                        <div class="card-body">
+                                            <h5 class="custom-name text-center"> زكرياء المصري</h5>
+                                            <p class="custom_comment text-center">
+                                                <q>
+                                                    تعامل راقي وعمل مميز بكل معنى الكلمة 
+                                                    شكراً جزيلاً لكم يا مبدعين
+                                                </q>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--قسم مشاريعنا-->
+        <section id="our-projects" class="section_projects" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+
+            <div class="title-projects text-center">
+                <h4 class="custom-heading-projects">مشاريعنا</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="image-project stat">
+                        <img src="images/icons-2/web-design.png" alt="">
+                    </div>
+                    <div class="count">
+                        <span class="timer" data-from="1" data-to="75" data-speed="3500" data-refresh-interval="1"></span>
+                    </div>
+                    <p>
+                        تصميم للمواقع 
+                        الإلكترونية
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="image-project stat">
+                        <img src="images/icons-2/responsive-design.png" alt="">
+                    </div>
+                    <div class="count">
+                        <span class="timer" data-from="1" data-to="47" data-speed="3500" data-refresh-interval="1"></span>
+                    </div>
+                    <p>
+                        التوافق مع الشاشات
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="image-project stat">
+                        <img src="images/icons-2/web-developer.png" alt="">
+                    </div>
+                    <div class="count">
+                        <span class="timer" data-from="1" data-to="35" data-speed="3500" data-refresh-interval="1"></span>
+                    </div>
+                    <p>
+                        توثيق للنص البرمجي
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="image-project stat">
+                        <img src="images/icons-2/code.png" alt="">
+                    </div>
+                    <div class="count">
+                        <span class="timer" data-from="1" data-to="26" data-speed="3500" data-refresh-interval="1"></span>
+                    </div>
+                    <p>
+                        إعادة التصميم للمواقع
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--قسم تواصل معنا-->
+        <section id="contact-us" class="section_contact" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="900">
+            <div class="title-contact-us">
+                <h4 class="custom-heading-contact text-center">تــواصل معنا</h4>
+            </div>
+            <!--نموذج للتواصل-->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="title-form-contact">
+                        <h4 class="custom-heading-form">نموذج لمراسلتنا</h4>
+                    </div>
+                    <form class="cmxform" id="commentForm">
+                        <div class="form-group">
+                            <label>الإسم الكامل</label>
+                            <input type="text" id="cname" name="name" class="form-control" placeholder="اكتب اسمك الكامل" minlength="3" required>
+                        </div>
+                        <div class="form-group">
+                            <label>بريدك الإلكتروني</label>
+                            <input type="email" id="cemail" name="email" class="form-control" placeholder="اكتب بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <label>ما الهدف من رسالتك ؟</label>
+                            <select class="form-control">
+                                <option value="inquiry" selected>استفسار</option>
+                                <option value="help">طلب مساعدة</option>
+                                <option value="order">طلب خدمة</option>
+                                <option value="support">دعم فني</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>اكتب تفاصيل مُرادك</label>
+                            <textarea class="form-control" name="ccomment" id="ccomment" rows="5" required></textarea>
+                        </div>
+                        <div class="float-right">
+                            <button type="submit" class="btn btn-primary custom-btn-primary">
+                                أرسل الطلب
+                                <div class="float-left">
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!--معلومات التواصل وروابط مواقع التواصل-->
+                <div class="col-lg-6 col-md-12">
+                    <div class="title_contact_us"> 
+                        <h4 class="custom-title-contacts-us">معلومات اللاتصال المباشر</h4>
+                    </div>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--اتصل مباشرةً على-->
+                    <div class="title-contact-2x">
+                        <h4 class="custom-title-contact-2x">اتصل بنا على : </h4>
+                        <div class="icons-contact">
+                            <div class="contact-icons">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>
+                                    0014 14 25 30 75 +
+                                </span>
+                            </div>
+                            <div class="contact-icons">
+                                <i class="fas fa-mail-bulk"></i>
+                                <span>
+                                    info@mail.com
+                                </span>
+                            </div>
+                            <div class="contact-icons">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    المغرب، مدينة البيضاء 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ذيل الصفحة-->
+        <footer class="sect_footer">
+            <div class="copyright">
+                <p>
+                    &copy; جميع الحقوق محفوظة 
+                    <a href="https://mostaql.com/u/Abdo_Free" target="_blank">
+                        |  المطور العربي
+                    </a>
+                </p>
+            </div>
+        </footer>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!--
-
-            <div id="home" style="height: 1500px;">home</div>
-    <div id="why-me" style="height: 1500px;">why-me</div>
-    <div id="services" style="height: 1500px;">services</div>
-    <div id="clients" style="height: 1500px;">clients</div>
-    <div id="contact-us" style="height: 1500px;">contact-us</div>
-
-
-    -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <script src="assest/fontawsome/js/all.min.js"></script>
     <script src="assest/Jquery-3.5.1/jquery-3.3.1.slim.min.js"></script>
     <script src="assest/Jquery-3.5.1/Jquery-3.5.1.js"></script>
-    <script src="assest/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assest/countTo/jquery.countTo.js"></script>
     <script src="assest/bootstrap-4.5/js/bootstrap.min.js"></script>
     <script src="assest/popper.js/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assest/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assest/jquery-validate/messages_ar.js"></script>
+
+
 
     <script src="js/script.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
