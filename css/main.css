@@ -5,6 +5,9 @@
     font-family: ar-font;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     direction: rtl;
@@ -507,8 +510,15 @@ Responsive paeg
         color: rgb(46, 46, 46);
     }
 
+    #why-me .paragraph-2 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
     #why-me p.paragraph-3 {
         color: black;
+        font-size: 15px;
+        margin-left: 10px;
     }
 
     #clients .custom-card {
